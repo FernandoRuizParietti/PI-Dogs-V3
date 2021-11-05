@@ -1,0 +1,129 @@
+/* ----------------BACKGROUND-------------------------------  */
+.bkg{
+    
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWzRdtXyfjYmN7EZnBaXDtaMgvnKjgL7kbMg&usqp=CAU');
+    /*background-image: url('https://m.media-amazon.com/images/I/71tfy7bDfQL._AC_SX466_.jpg');*/
+    /* background-position: center center;
+    background-color: black;
+    /*padding-bottom: 0px;*/
+    /* background-size: cover; */ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100vw;
+    height: 215%
+    
+}
+/* ----------------miNAV BAR-------------------------------  */
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+    /*padding-left: 30em;*/
+    padding-top: 5px; 
+  }
+
+.createButton{
+    display: flex;
+    justify-content: center;
+    /* margin-left: 30em; */
+    padding-top: 1em; 
+
+}
+.button{
+    border-radius: 5em;
+    width: 10rem;
+    height: 2rem;
+    background-color: gray;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}   
+
+.linkCard{
+    text-decoration: none;
+    font-size: small;
+    color: black;
+}
+
+/* ----------------HEAD------------------------------- */
+.head{
+    display: flex;
+    padding-top: 1em;
+    padding-left: 9em;
+    padding-bottom: 0%;
+    color:whitesmoke;
+    font-size: 60px;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+    
+}
+
+/* ----------------FILTERS------------------------------- */
+.filters{
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+
+/* ----------------CARDS------------------------------- */
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    gap: 40px;
+    padding: 40px;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .navBar{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJkrei4fuFD3WKZ1VDPqsbpitaiCpG9f2kig&usqp=CAU');
+    width: 100vw;
+    height: 10vh;
+    padding-bottom  : 20px;
+    padding-top: 15px;
+} */
+
+/* .bkg{
+    background-image: url('https://images.pexels.com/photos/1189673/pexels-photo-1189673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100vw;
+    height: 200vh;
+} */
+
+
+/* .container{
+    width: 100vw;
+    height: 200vh;
+    backdrop-filter: blur(3px);
+    background-color: #f3f3f373;
+} */
+
+/* .cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 0.1em; 
+    grid-row-gap: 0.1em; 
+} */

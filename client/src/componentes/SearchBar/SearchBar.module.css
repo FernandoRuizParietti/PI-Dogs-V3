@@ -1,0 +1,19 @@
+.button {
+    border: solid 0.8px transparent;
+    font-size: 0.8em;
+    background-color:gray;
+    transition: background-color 0.25s;
+    cursor: pointer;
+    color:black;
+  } 
+
+  .button:hover {
+    background-color: lightgray;
+  }
+
+  .input {
+    color:black;
+    font-size: 0.8em;
+    font-weight: 100;
+    width: 15rem;
+  }

@@ -1,0 +1,70 @@
+.bkg{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWzRdtXyfjYmN7EZnBaXDtaMgvnKjgL7kbMg&usqp=CAU');
+    background-size: cover;
+    backdrop-filter: blur(15px);
+    background-color: #f3f3f373;
+    width: 100%;
+    height: 250%;
+    padding-top: 1em;
+    margin-top: -2em;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 100px;
+}
+.image{
+    width: 15%;
+    height: 15%;
+    border-radius: 10px;
+    border: solid 1px whitesmoke
+
+}
+.backHome{
+    border-radius: 5em;
+    width: 5rem;
+    height: 2rem;
+    background-color: gray;
+}
+.backHome:hover{
+    cursor: pointer;
+    background-color: lightgray;
+    
+}
+.detail{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    font-size: 20px;
+    justify-content: center;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    padding-right: 40px;
+    
+}
+
+.name{
+    border: 2px solid whitesmoke;
+    margin-left: 600px;
+    margin-right: 600px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 20px;
+    font-size: 35px;
+    color:whitesmoke;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+    font-weight: 200;
+    /* padding-top: -10px; */
+    /* padding-bottom: -10px; */
+    /* margin-left: -10em;  */
+    /* margin-top: -0.05em; */
+}
+
+.allD{
+    border: solid 1px black;
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-top: -1.5em;
+    border-radius: 15px;
+    background-color:rgba(245, 245, 245, 0.445)
+    /* background-color: rgba(0, 0, 0, 0.158); */
+}

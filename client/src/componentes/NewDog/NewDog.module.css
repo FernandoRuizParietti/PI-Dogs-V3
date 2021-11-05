@@ -1,0 +1,69 @@
+.bkg{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWzRdtXyfjYmN7EZnBaXDtaMgvnKjgL7kbMg&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 150vh;
+} 
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 100px;
+}
+
+.head{
+    border: 2px solid whitesmoke;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 20px;
+    color: whitesmoke;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+    font-size: 50px;
+    border-radius: 20px;
+}
+
+.formName{
+    color:whitesmoke;
+    font-size: 1em;
+    font-weight: 500;
+    width: 75rem;
+    margin-bottom: 1rem;
+}
+
+
+.formHeight , .formWeight, .formLifeSpan, .formTemperaments{
+    color:whitesmoke;
+    font-size: 1em;
+    font-weight: 500;
+    width: 75rem;
+    margin-bottom: 1rem;
+}
+
+.errors{
+    font-weight: 100;
+}
+
+.home{
+    border-radius: 5em;
+    width: 5rem;
+    height: 2rem;
+    background-color: gray;
+}
+.home:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.submit{
+    border-radius: 5em;
+    width: 5rem;
+    height: 2rem;
+    background-color: gray;
+}
+.submit:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}
