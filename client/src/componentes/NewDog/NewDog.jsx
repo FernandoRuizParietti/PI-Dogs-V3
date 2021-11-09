@@ -142,7 +142,6 @@ export default function NewDog(){
                 </div>
                 )
             }
-            { console.log(newDog)  }
         </div>
         </div>
         </div>

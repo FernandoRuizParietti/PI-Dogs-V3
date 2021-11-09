@@ -20,8 +20,26 @@ export function getTemperaments(){
     };
 };
 
+//-------------------------Prueba hecha con Proesas-----------------
+// export function getTemperaments(){
+//     return function(dispatch){
+//          axios.get("http://localhost:3001/api/temperaments/",{})
+//         .then((temperaments)=>{ 
+//             return dispatch ({
+//                 type: 'GET_TEMPERAMENTS',
+//                 payload: temperaments.data
+//             });
+            
+//         })
+//         console.log(temperaments, 'Holaaaaaa')
+//         .catch((error)=>{
+//             error
+//         })    
+//     };
+// };
+
 export function getDogDetails(id){
-    console.log(id, 'HOALAAAAAA')
+    //console.log(id, 'HOALAAAAAA')
     return async function(dispatch){
         var dogDetails = await axios.get(`http://localhost:3001/api/dogs/${id}`,{});
         return dispatch ({

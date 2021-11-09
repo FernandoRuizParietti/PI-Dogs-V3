@@ -2,11 +2,6 @@
 .bkg{
     
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWzRdtXyfjYmN7EZnBaXDtaMgvnKjgL7kbMg&usqp=CAU');
-    /*background-image: url('https://m.media-amazon.com/images/I/71tfy7bDfQL._AC_SX466_.jpg');*/
-    /* background-position: center center;
-    background-color: black;
-    /*padding-bottom: 0px;*/
-    /* background-size: cover; */ 
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -19,14 +14,12 @@
 .searchBar {
     display: flex;
     justify-content: center;
-    /*padding-left: 30em;*/
     padding-top: 5px; 
   }
 
 .createButton{
     display: flex;
     justify-content: center;
-    /* margin-left: 30em; */
     padding-top: 1em; 
 
 }

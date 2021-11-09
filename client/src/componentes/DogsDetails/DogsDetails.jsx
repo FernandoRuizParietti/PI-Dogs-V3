@@ -5,7 +5,6 @@ import { getDogDetails } from "../../actions";
 import {Link} from 'react-router-dom';
 import styles from  './DogsDetails.module.css';
 import {IoHome} from 'react-icons/io5';
-//import { rootReducer } from "../../reducer/index";
 
 
 export default function DogsDetails({id}){
@@ -21,7 +20,6 @@ export default function DogsDetails({id}){
         dogDetail.temperament = "None"
     }
     return(
-        // <div style = {{backgroundImage : `url(${dogDetail.image})`,width: '100%',height: '100%',backgroundRepeat: 'no-repeat',backgroundSize: 'cover',paddingTop:'20px'}}>
         <div className={styles.bkg}>
         <div className={styles.container}>
             <br/>
