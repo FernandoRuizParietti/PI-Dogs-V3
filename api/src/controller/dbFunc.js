@@ -16,7 +16,6 @@ module.exports = {
             temperament: d.temperament,
         }
     })
-    //console.log(result, 'Hola')
     return result;
 
 },

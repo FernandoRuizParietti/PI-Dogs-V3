@@ -2,7 +2,6 @@ const { default: axios } = require("axios");
 const {URL_BASE_API, API_KEY} = process.env;
 
 
-//const API = 'https://api.thedogapi.com/v1/breeds?api_key={5c1b01f3-c127-4594-a797-577b7162bf23}';
 const API = (`${URL_BASE_API}?api_key${API_KEY}`)
 
 // TRAIGO TODA LA INFO QUE NECESITO DE LA API PARA TODAS MIS RUTAS

@@ -5,9 +5,6 @@ const {Dogs} = require('../db.js');
 const api = require('../controller/api.js');
 const dogsApi = require('../controller/dogsApi');
 const {Temperaments} = require('../db');
-// const {URL_BASE_API, API_KEY} = process.env;
-// const { axios } = require('axios');
-// const {Op} = require('sequelize');
 const dogsBD = require('../controller/dogsDB');
 const dbDogs = require('../controller/dbFunc');
 
@@ -27,7 +24,6 @@ router.get('/', async (req,res, next) =>{
     const {name} = req.query;  
     let dogs = await dogsApi();  
     const dogsDB = await dogsBD();
-    //console.log(dogsDB, 'jajajajaja')
     const allDogs = [...dogsDB,...dogs];
 
      try{
@@ -122,7 +118,6 @@ router.post('/', async (req,res,next) =>{
           try{
             
             let temps =  temperament.toString()
-            //console.log(temps)
             
           const newDog = await Dogs.create({
               name: name,
@@ -133,16 +128,10 @@ router.post('/', async (req,res,next) =>{
               temperament: temps,
             });
              console.log(newDog,'Antes')
-            //newDog.dataValues.temperaments = temps
-            //console.log(newDog, 'Despues')
 
             const newTemp = await Temperaments.create({
               name: temps,
-            })
-            // await newDog.addTemperaments({
-            //   where: {name: temps}
-            // });  
-           
+            })           
 
             res.send(newDog);
             
@@ -154,6 +143,21 @@ router.post('/', async (req,res,next) =>{
     }
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // router.get('/', (req, res, next) => {
 //     //console.log(URL_BASE_API)

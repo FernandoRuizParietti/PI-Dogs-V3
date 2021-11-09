@@ -9,14 +9,23 @@ module.exports = (sequelize) => {
       primaryKey: true,
       allowNull: false,
     },
-    // temperamentId: {
-    //     type: DataTypes.UUID,
-    //     allowNull: false,
-    //     primaryKey: true,
-    //     defaultValue: DataTypes.UUIDV4, // esta linea me genera automaticamente un UUID
-    //   },
   },{
     timestamps: false
-  
+    
   });
 };
+
+
+
+
+
+
+
+
+
+// temperamentId: {
+//     type: DataTypes.UUID,
+//     allowNull: false,
+//     primaryKey: true,
+//     defaultValue: DataTypes.UUIDV4, // esta linea me genera automaticamente un UUID
+//   },

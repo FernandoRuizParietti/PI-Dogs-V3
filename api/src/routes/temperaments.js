@@ -6,9 +6,79 @@ const { sequelize } = require('sequelize');
 const { apiDogs } = require('../controller/api.js');
 //const router = express.Router();
 
-
-
 const router = Router();
+
+
+router.get('/', async(req,res,next)=>{
+    try {
+         let tempApi = await apiDogs();
+         let temp = tempApi.map((el)=>el.temperament)
+         
+         
+         tempApi = tempApi.map(d => {
+             if(d.temperament){
+                 return d.temperament;
+                };
+            }).join().split(',');
+            
+            let temps = []; //Aca voy a guardar todos los Temperamentos de la Api en mi DB
+            tempApi.map(d => {
+            if(!temps.includes(d.trim()) && d){
+                temps.push(d.trim());
+            };
+        });
+        temps = temps.sort() //oredeno alfabeticamente los temperamentos
+        
+        //Aca meto todos los temperamentos a la tabla de mi DB
+        
+        temps.forEach((el)=>{
+            Temperaments.findOrCreate({
+                where: {name: el}
+            })
+        })
+        let allTemps = await Temperaments.findAll()
+        console.log(allTemps)
+        
+        res.send(temps)
+        
+    } catch (error) {
+        next(error)
+    }
+});
+
+// router.post('/temperament', async (req, res, next) => {
+//     //res.send('soy post en /temperament')
+//     try{
+//         const {name} = req.body;
+//         const newTemperament = await Temperaments.create({
+//             name
+//         })
+//         res.send(newTemperament)
+//     }catch(error){
+//         next(error)
+//     }
+// });
+
+// router.post('/temperament', (req, res, next) => {
+//         //res.send('soy post en /temperament')
+        
+//             const {name} = req.body;
+//             return Temperaments.create({name})
+//             .then((newTemperament)=>{
+//                 res.json(newTemperament)
+//             })
+            
+//             .catch((error)=>{
+//                 next(error)
+//             })
+//     });
+
+module.exports = router;
+
+
+
+
+
 
 
 // router.get('/', async (req, res, next) =>{
@@ -28,58 +98,9 @@ const router = Router();
 //   }
 //  });
 
- router.get('/', async(req,res,next)=>{
-     try {
-         let tempApi = await apiDogs();
-         let temp = tempApi.map((el)=>el.temperament)
-        
-
-         tempApi = tempApi.map(d => {
-            if(d.temperament){
-            return d.temperament;
-          };
-          }).join().split(',');
-
-          let temps = []; //Aca voy a guardar todos los Temperamentos de la Api en mi DB
-          tempApi.map(d => {
-            if(!temps.includes(d.trim()) && d){
-               temps.push(d.trim());
-            };
-          });
-          temps = temps.sort() //oredeno alfabeticamente los temperamentos
-
-        //Aca meto todos los temperamentos a la tabla de mi DB
-
-         temps.forEach((el)=>{
-             Temperaments.findOrCreate({
-                 where: {name: el}
-             })
-         })
-        let allTemps = await Temperaments.findAll()
-        console.log(allTemps)
-        
-        res.send(temps)
-
-     } catch (error) {
-         next(error)
-     }
- });
-
-router.post('/temperament', async (req, res, next) => {
-    //res.send('soy post en /temperament')
-    try{
-    const {name} = req.body;
-    const newTemperament = await Temperaments.create({
-        name
-    })
-    res.send(newTemperament)
-    }catch(error){
-        next(error)
-    }
-});
 
 // router.get('/lala', async (req, res, next) => {
-//     //res.send('soy get en /temperaments/lala')
+    //     //res.send('soy get en /temperaments/lala')
 //     try{
 //     const temperamentsApi = await tempFunc();
 //     res.send(temperamentsApi)
@@ -87,5 +108,3 @@ router.post('/temperament', async (req, res, next) => {
 //         next(error)
 //     }
 // });
-
-module.exports = router;
