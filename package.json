@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "cli": "^1.0.1",
+    "dotenv": "^14.2.0",
     "heroku": "^7.59.2",
     "nodemon": "^2.0.15"
   }
