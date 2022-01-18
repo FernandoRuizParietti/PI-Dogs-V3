@@ -1,9 +1,9 @@
 .bkg{
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWzRdtXyfjYmN7EZnBaXDtaMgvnKjgL7kbMg&usqp=CAU');
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 150vh;
+    height: 150vh; */
 } 
 
 .container{

@@ -20,7 +20,6 @@ const router = Router();
 
 router.get('/', async (req,res, next) =>{ 
 
-
     const {name} = req.query;  
     let dogs = await dogsApi();  
     const dogsDB = await dogsBD();
@@ -126,8 +125,8 @@ router.post('/', async (req,res,next) =>{
               life_span: life_span,
               image: image,
               temperament: temps,
-            });
-             console.log(newDog,'Antes')
+            }); 
+             //console.log(newDog,'Antes')
 
             const newTemp = await Temperaments.create({
               name: temps,
@@ -144,7 +143,28 @@ router.post('/', async (req,res,next) =>{
 
 });
 
+// -------- delete de un dog by name  --------------
 
+// router.delete('/delete', async (req,res, next) =>{ 
+//   // res.send('soy un delete en /delete')
+//   const {name} = req.query;
+//   const dogsDB = await dogsBD();  
+//   try{
+//     if(name){
+//       console.log(name , 'Holaaaa')
+//       const dogName = dogsDB.splice(d => {
+//         return d.name.toLocaleLowerCase().includes(name.toLocaleLowerCase());
+//       });
+//       if(!dogName.length){
+//         res.status(404).send({ msg: "Dog not found" });
+//       };
+//       return res.send(dogName); 
+//     };
+
+//   }catch(error){
+//     next(error)
+//   }
+// });
 
 
 

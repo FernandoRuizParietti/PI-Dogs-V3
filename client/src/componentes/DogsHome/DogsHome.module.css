@@ -1,12 +1,16 @@
+/* @import url(../Img/Fondo\ PI\ Dogs.jpg); */
+
 /* ----------------BACKGROUND-------------------------------  */
 .bkg{
     
+    background-color: black;
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWzRdtXyfjYmN7EZnBaXDtaMgvnKjgL7kbMg&usqp=CAU');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    width: 100vw;
-    height: 215%
+    /* background-repeat: no-repeat; */
+    /* background-position: 50px 500 px; */
+    /* background-size: cover; */
+    /* position: absolute;  */
+    /*width: 100vw;
+    height: 215% */ 
     
 }
 /* ----------------miNAV BAR-------------------------------  */
@@ -44,9 +48,10 @@
 /* ----------------HEAD------------------------------- */
 .head{
     display: flex;
-    padding-top: 1em;
+    margin-top: 0%;
+    padding-top: 1rem;
     padding-left: 9em;
-    padding-bottom: 0%;
+    padding-bottom: 1%;
     color:whitesmoke;
     font-size: 60px;
     text-shadow: 0.1em 0.1em 0.05em #333;
@@ -69,7 +74,10 @@
     padding: 40px;
     justify-content: center;
 }
-
+.footer{
+    color:whitesmoke;
+    font-size: 15px;    
+}
 
 
 

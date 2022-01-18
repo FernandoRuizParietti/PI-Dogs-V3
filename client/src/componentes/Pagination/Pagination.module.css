@@ -4,12 +4,19 @@
     font-size: 0.8em;
     padding: 0.3em;
     color:beige;
+    
         
 }
 
 .list:hover{
     background-color:lightgray;
+    border-radius: 5px;
     color: black;
     cursor: pointer;
     
 }
+/* .list:active {
+    color: saturate(darken(#ced4da, 50%), 5%);
+      background-color: saturate(lighten(#ced4da, 7.5%), 2.5%);
+      border-color: #ced4da; 
+} */

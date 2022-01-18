@@ -37,7 +37,7 @@ router.get('/', async(req,res,next)=>{
             })
         })
         let allTemps = await Temperaments.findAll()
-        console.log(allTemps)
+        //console.log(allTemps)
         
         res.send(temps)
         

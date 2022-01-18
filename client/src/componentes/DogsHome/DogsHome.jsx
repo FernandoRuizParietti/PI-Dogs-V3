@@ -141,7 +141,11 @@ return (
              currentDogs && currentDogs.map(d => { return (
                 <div key={d.id} className={styles.dogCard}>
                 <Link to= {'/dogs/'+d.id} className={styles.linkCard}>
-                <DogCard name={d.name} image={d.image} weight={d.weight} temperament ={d.temperament} />
+                <DogCard 
+                name={d.name} 
+                image={d.image} 
+                weight={d.weight} 
+                temperament ={d.temperament} />
                 </Link>
                 </div>
                 )})   
@@ -153,6 +157,9 @@ return (
         <Link to= '/'>
             <button className={styles.button}>Landing Page</button>
         </Link>
+        </div>
+        <div className={styles.footer}>
+            <footer>APP by Fer Ruiz</footer>
         </div>
     </div>
 
